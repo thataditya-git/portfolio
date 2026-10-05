@@ -1,0 +1,198 @@
+/* ---------- Colours & fonts (change these to restyle the whole site) ---------- */
+:root {
+  --paper: #f6f8fb;
+  --ink: #16243a;
+  --muted: #5a6a80;
+  --accent: #2456d6;
+  --line: #d9e0ea;
+  --serif: "Instrument Serif", Georgia, serif;
+  --sans: "Manrope", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  line-height: 1.6;
+  /* faint graph-paper grid */
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- Navigation ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: rgba(246, 248, 251, 0.94);
+  border-bottom: 1px solid var(--line);
+}
+.logo { font-family: var(--serif); font-size: 1.6rem; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.nav nav { display: flex; gap: 1.4rem; }
+.nav nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+.nav nav a:hover { color: var(--accent); }
+
+/* ---------- Layout ---------- */
+main { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+section {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+h2 { font-family: var(--serif); font-weight: 400; font-size: 2.2rem; margin-bottom: 1.2rem; }
+h3 { font-size: 1.05rem; }
+p + p { margin-top: 0.8rem; }
+
+/* ---------- Hero ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border: none;
+  background: none;
+  padding: 4.5rem 0 2.5rem;
+}
+.photo {
+  flex-shrink: 0;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  outline: 2px solid var(--accent);
+  background: var(--line);
+}
+h1 { font-family: var(--serif); font-weight: 400; font-size: 4.8rem; line-height: 1; }
+.headline { font-size: 1.1rem; color: var(--ink); max-width: 34rem; margin-top: 1rem; }
+.location { color: var(--muted); margin: 0.4rem 0 1.6rem; }
+.hero-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background: var(--accent);
+  border: 2px solid var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.btn:hover { background: var(--ink); border-color: var(--ink); }
+.btn-outline { background: transparent; color: var(--accent); }
+.btn-outline:hover { color: #fff; }
+
+/* ---------- Timelines (experience + education) ---------- */
+.timeline { list-style: none; border-left: 2px solid var(--line); padding-left: 1.5rem; }
+.timeline > li { position: relative; padding-bottom: 1.8rem; }
+.timeline > li:last-child { padding-bottom: 0; }
+.timeline > li::before {          /* dot on the line */
+  content: "";
+  position: absolute;
+  left: -1.95rem;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.when { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+.org { color: var(--muted); margin-bottom: 0.4rem; }
+.points { margin: 0.6rem 0 0 1.1rem; }
+.points li { margin-bottom: 0.3rem; }
+
+/* ---------- Projects ---------- */
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+.project {
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--ink);
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.project h3 { font-size: 1.15rem; }
+.project p { flex-grow: 1; color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Tags (skills + project stacks) ---------- */
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tags li {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 999px;
+  font-size: 0.88rem;
+}
+.tags.small li { font-size: 0.78rem; padding: 0.2rem 0.6rem; }
+
+.skill-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; }
+.skill-groups h3 { margin-bottom: 0.6rem; }
+
+/* ---------- Certifications ---------- */
+.sub { margin: 2rem 0 0.8rem; font-size: 1.15rem; }
+.certs { list-style: none; }
+.certs li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.certs li:last-child { border-bottom: none; }
+.certs span { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+
+/* ---------- Interests ---------- */
+.interest-list { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.interest-list p { color: var(--muted); }
+
+/* ---------- Contact ---------- */
+.contact-links { list-style: none; display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
+.contact-links a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-links a:hover { background: var(--ink); color: #fff; }
+
+footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 2rem 1rem 3rem; }
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+  .nav { flex-direction: column; align-items: stretch; padding: 0.8rem 1rem 0.5rem; }
+  .logo { text-align: center; }
+  .nav nav { overflow-x: auto; padding-bottom: 0.4rem; }   /* swipeable nav */
+  html { scroll-padding-top: 110px; }
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 700px) {
+  .hero { flex-direction: column; text-align: center; padding-top: 2.5rem; gap: 1.5rem; }
+  .photo { width: 180px; height: 180px; }
+  .headline { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  h1 { font-size: 3.2rem; }
+  h2 { font-size: 1.9rem; }
+  section { padding: 1.4rem; }
+  .projects, .skill-groups, .interest-list { grid-template-columns: 1fr; }
+  .certs li { flex-direction: column; gap: 0.1rem; }
+}

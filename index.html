@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Prakash | Software Engineer &amp; IT Undergrad</title>
+  <meta name="description" content="Portfolio of Aditya Prakash, IT undergraduate at Manipal Institute of Technology working on backend systems, multi-agent AI and quantitative research.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#top" class="logo">Aditya Prakash</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <img src="images/profile.jpg" alt="Aditya Prakash by a mountain river" class="photo">
+      <div>
+        <h1>Aditya Prakash</h1>
+        <p class="headline">IT undergrad at Manipal Institute of Technology · SDE Intern at OneMetric · BRAIN Research Consultant at WorldQuant</p>
+        <p class="location">Delhi, India</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">See my work</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about">
+      <h2>About me</h2>
+      <p>Third-year IT student at Manipal Institute of Technology, drawn to the backend and AI/ML side of building software.</p>
+      <p>I recently built production Node.js data pipelines during an SDE internship, and I'm currently researching how LLMs evaluate code quality. Alongside that, I develop systematic alpha signals as a part-time research consultant with WorldQuant. Always learning, always building.</p>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Jul 2026 – Present</span>
+          <h3>Senior Committee Member</h3>
+          <p class="org">IEEE EMBS Manipal · Part-time</p>
+        </li>
+        <li>
+          <span class="when">Jun 2026 – Present</span>
+          <h3>BRAIN Research Consultant</h3>
+          <p class="org">WorldQuant · Part-time · Remote</p>
+          <p>Developing systematic alpha signals on WorldQuant's BRAIN platform using Fast Expression and a Python-based simulation environment. Researching and backtesting predictive factors.</p>
+        </li>
+        <li>
+          <span class="when">Jun 2026 – Jul 2026</span>
+          <h3>Software Engineer Intern</h3>
+          <p class="org">OneMetric (Growtomation Marketing Solutions) · Gurugram</p>
+          <p>Built client-facing backend tooling and CRM integrations on the HubSpot platform.</p>
+          <ul class="points">
+            <li>Node.js dedupe pipeline that merges ~800K CRM records using waterfall priority logic, with checkpoint/resume to recover from failures.</li>
+            <li>Cross-portal migration of complex record relationships using HubSpot's CRM Associations v4 API.</li>
+            <li>Historical phone-number backfill system built on the HubSpot Events API.</li>
+            <li>Private OAuth app with iframe-based UI extension cards for internal workflows.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="when">Sep 2024 – Apr 2025</span>
+          <h3>AI Taskphase Member</h3>
+          <p class="org">Project MANAS · Part-time</p>
+        </li>
+        <li>
+          <span class="when">Oct 2024 – Jan 2025</span>
+          <h3>Taskphase Recruit</h3>
+          <p class="org">Cryptonite · Part-time</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <span class="when">Jun 2026</span>
+          <h3>CRM Intelligence Desk</h3>
+          <p>Built in seven days for the Band of Agents Hackathon on lablab.ai. Four agents clean messy CRM data: an Auditor flags stale records, duplicates and missing fields; an Enricher fills gaps from company data; a Syncer builds the API payload; and a Reporter posts a summary and waits. Nothing touches production until a human approves.</p>
+          <ul class="tags small"><li>Band SDK</li><li>GPT-4o</li><li>Azure OpenAI</li><li>HubSpot CRM API</li><li>REST APIs</li></ul>
+        </article>
+        <article class="project">
+          <span class="when">Mar 2026 – Present</span>
+          <h3>FraudShield India</h3>
+          <p>Real-time, multi-agent UPI fraud detection and investigation system built for the Microsoft Azure AI Unlocked Hackathon, processing live transactions on Azure.</p>
+          <ul class="tags small"><li>Python</li><li>Azure Functions</li><li>Azure OpenAI</li><li>Cosmos DB</li><li>Event Hub</li></ul>
+        </article>
+        <article class="project">
+          <span class="when">Ongoing</span>
+          <h3>LLM code-evaluation research</h3>
+          <p>Undergraduate research at MIT Manipal on whether LLMs prefer human-written or LLM-generated code when judging code quality.</p>
+          <ul class="tags small"><li>LLMs</li><li>Experiment design</li><li>Python</li></ul>
+        </article>
+        <article class="project">
+          <span class="when">Oct 2022 – Jan 2023</span>
+          <h3>Airways Reservation System</h3>
+          <p>Admin tool to schedule flights and register, edit, cancel and sort passenger data, built at DPS R.K. Puram.</p>
+          <ul class="tags small"><li>Python</li><li>MySQL</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2024 – 2028</span>
+          <h3>B.Tech, Information Technology</h3>
+          <p class="org">Manipal Institute of Technology, Manipal</p>
+        </li>
+        <li>
+          <span class="when">2019 – 2023</span>
+          <h3>Grades 9–12</h3>
+          <p class="org">Delhi Public School (DPS), R.K. Puram, New Delhi</p>
+        </li>
+      </ol>
+
+      <h3 class="sub">Certifications</h3>
+      <ul class="certs">
+        <li><strong>Supervised Machine Learning: Regression and Classification</strong><span>Stanford University · May 2026</span></li>
+        <li><strong>HubSpot Marketing Hub Software Certified</strong><span>HubSpot Academy · Jun 2026</span></li>
+        <li><strong>HubSpot Sales Hub Software Certified</strong><span>HubSpot Academy</span></li>
+        <li><strong>Service Hub Software Certified</strong><span>HubSpot Academy</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Languages</h3>
+          <ul class="tags"><li>Python</li><li>JavaScript (Node.js)</li><li>Java</li><li>C</li><li>C++</li><li>SQL</li><li>HTML &amp; CSS</li></ul>
+        </div>
+        <div>
+          <h3>Backend &amp; cloud</h3>
+          <ul class="tags"><li>REST APIs</li><li>Microsoft Azure</li><li>Azure Functions</li><li>Cosmos DB</li><li>HubSpot APIs</li><li>MySQL</li><li>Git</li></ul>
+        </div>
+        <div>
+          <h3>AI &amp; research</h3>
+          <ul class="tags"><li>Multi-agent systems</li><li>LLM evaluation</li><li>Machine learning</li><li>Alpha generation</li></ul>
+        </div>
+        <div>
+          <h3>Engineering</h3>
+          <ul class="tags"><li>Data pipelines</li><li>Workflow engines</li><li>System deployment</li><li>Data structures &amp; algorithms</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Interests ===== -->
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul class="interest-list">
+        <li><h3>Quantitative finance</h3><p>Researching predictive factors and backtesting alphas.</p></li>
+        <li><h3>Multi-agent AI</h3><p>Getting agents to plan, act and hand off work safely.</p></li>
+        <li><h3>Travel &amp; the outdoors</h3><p>Mountains and rivers, like the one in my photo.</p></li>
+        <li><h3>Fitness</h3><p>Regular gym training to balance out screen time.</p></li>
+      </ul>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Open to internships, research collaborations and conversations about backend systems, AI or quant.</p>
+      <ul class="contact-links">
+        <li><a href="mailto:your.email@example.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/aditya-prakash101/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Aditya Prakash · Built with HTML &amp; CSS, hosted on GitHub Pages</footer>
+
+</body>
+</html>
